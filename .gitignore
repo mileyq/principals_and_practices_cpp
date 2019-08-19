@@ -1,3 +1,7 @@
-.desktop.ini
+desktop.ini
+*.exe
 not-my-Programming-code/*
+.vscode
+.vscode/*
+principles_and_practices_cpp_ws.code-workspace
 
