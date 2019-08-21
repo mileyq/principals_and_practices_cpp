@@ -1,4 +1,5 @@
 // calculator example they are programming in chapter 6. I will give my own attempt without simply copying theirs.
+// Unfinished. Moved on in book. Will return.
 
 /* psuedo code for my calculator:
 1. read input from command line
