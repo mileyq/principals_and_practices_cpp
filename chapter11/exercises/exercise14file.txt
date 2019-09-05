@@ -1,0 +1,41 @@
+Random copy paste follows;: 
+
+Patm is the best
+
+
+Specializations
+
+The standard library provides a specialization of std::vector for the type bool, which may be optimized for space efficiency.
+vector<bool>
+	space-efficient dynamic bitset
+(class template specialization)
+Iterator invalidation
+	This section is incomplete
+
+There are still a few inaccuracies in this section. Refer to individual member function pages for more detail.
+Operations 	Invalidated
+All read only operations, swap, std::swap 	Never
+clear, operator=, assign 	Always
+reserve, shrink_to_fit 	If the vector changed capacity, all of them. If not, none.
+erase 	Erased elements + all elements after them (including end())
+push_back, emplace_back 	If the vector changed capacity, all of them. If not, only end().
+insert, emplace, resize 	If the vector changed capacity, all of them. If not, only those after the insertion point.
+pop_back 	The element erased and end().
+Member types
+Member type 	Definition
+value_type 	T
+allocator_type 	Allocator
+size_type 	Unsigned integer type (usually std::size_t)
+difference_type 	Signed integer type (usually std::ptrdiff_t)
+reference 	Allocator::reference 	(until C++11)
+value_type& 	(since C++11)
+const_reference 	Allocator::const_reference 	(until C++11)
+const value_type& 	(since C++11)
+pointer 	Allocator::pointer 	(until C++11)
+std::allocator_traits<Allocator>::pointer 	(since C++11)
+const_pointer 	Allocator::const_pointer 	(until C++11)
+std::allocator_traits<Allocator>::const_pointer 	(since C++11)
+iterator 	LegacyRandomAccessIterator
+const_iterator 	Constant LegacyRandomAccessIterator
+reverse_iterator 	std::reverse_iterator<iterator>
+const_reverse_iterator 	std::reverse_iterator<const_iterator>
